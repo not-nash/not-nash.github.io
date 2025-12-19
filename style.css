@@ -1,4 +1,6 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,9 @@
     font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
-/* PAGE */
+/* =========================
+   GLOBAL
+========================= */
 body {
     background-color: #0b0b0b;
     color: #ffffff;
@@ -16,14 +20,15 @@ body {
     align-items: center;
 }
 
-/* LAYOUT */
 .container {
     width: 90%;
     max-width: 900px;
     text-align: center;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 header h1 {
     font-size: 2.8rem;
     font-weight: 600;
@@ -34,14 +39,18 @@ header h1 {
     margin: 10px 0 50px;
 }
 
-/* GRID */
+/* =========================
+   HOMEPAGE GRID
+========================= */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
 }
 
-/* CARD */
+/* =========================
+   HOMEPAGE CARDS
+========================= */
 .card {
     position: relative;
     aspect-ratio: 1 / 1;
@@ -60,7 +69,7 @@ header h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* DARK OVERLAY */
+/* Dark overlay */
 .card::before {
     content: "";
     position: absolute;
@@ -68,20 +77,20 @@ header h1 {
     background: rgba(0, 0, 0, 0.55);
 }
 
-/* TEXT */
+/* Card text */
 .card span {
     position: relative;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-/* HOVER */
+/* Hover effect */
 .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* BACKGROUND IMAGES */
+/* Homepage background images */
 .academic {
     background-image: url("images/academic.jpg");
 }
@@ -94,9 +103,65 @@ header h1 {
     background-image: url("images/works.jpg");
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer {
     margin-top: 50px;
     font-size: 0.9rem;
     color: #777;
+}
+
+/* =========================
+   ACADEMIC LIFE PAGE
+========================= */
+.academic-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.page-header {
+    margin-bottom: 60px;
+}
+
+.page-header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
+
+.academic-entry {
+    margin-bottom: 70px;
+    text-align: left;
+}
+
+.academic-entry img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.caption h2 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.caption p {
+    color: #cfcfcf;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .page-header h1 {
+        font-size: 2.1rem;
+    }
 }
