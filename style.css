@@ -17,13 +17,12 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .container {
     width: 90%;
     max-width: 900px;
-    text-align: center;
+    padding: 60px 0;
 }
 
 /* =========================
@@ -32,11 +31,13 @@ body {
 header h1 {
     font-size: 2.8rem;
     font-weight: 600;
+    text-align: center;
 }
 
 .subtitle {
     color: #9a9a9a;
-    margin: 10px 0 50px;
+    margin: 12px 0 50px;
+    text-align: center;
 }
 
 /* =========================
@@ -54,22 +55,18 @@ header h1 {
 .card {
     position: relative;
     aspect-ratio: 1 / 1;
-    border-radius: 12px;
+    border-radius: 14px;
     overflow: hidden;
     text-decoration: none;
     color: white;
-
     background-size: cover;
     background-position: center;
-
     display: flex;
     align-items: flex-end;
     padding: 20px;
-
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Dark overlay */
 .card::before {
     content: "";
     position: absolute;
@@ -77,20 +74,18 @@ header h1 {
     background: rgba(0, 0, 0, 0.55);
 }
 
-/* Card text */
 .card span {
     position: relative;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-/* Hover effect */
 .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* Homepage background images */
+/* Homepage images */
 .academic {
     background-image: url("images/academic.jpg");
 }
@@ -104,12 +99,72 @@ header h1 {
 }
 
 /* =========================
-   FOOTER
+   PAGE NAVIGATION (GLOBAL)
 ========================= */
-footer {
-    margin-top: 50px;
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid #2a2a2a;
+    background-color: #121212;
+    text-decoration: none;
+    color: #cccccc;
     font-size: 0.9rem;
-    color: #777;
+    transition: all 0.25s ease;
+}
+
+.nav-button:hover {
+    background-color: #181818;
+    color: #ffffff;
+    border-color: #444;
+}
+
+/* Current page highlight */
+.nav-button.active {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #666;
+    cursor: default;
+}
+
+/* Keyboard accessibility */
+.nav-button:focus-visible {
+    outline: 2px solid #888;
+    outline-offset: 3px;
+}
+
+/* =========================
+   BREADCRUMBS
+========================= */
+.breadcrumbs {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.breadcrumbs a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    color: #ffffff;
+}
+
+.breadcrumbs span {
+    margin: 0 6px;
 }
 
 /* =========================
@@ -118,7 +173,6 @@ footer {
 .academic-page {
     max-width: 800px;
     margin: 0 auto;
-    padding-bottom: 60px;
 }
 
 .page-header {
@@ -127,7 +181,6 @@ footer {
 
 .page-header h1 {
     font-size: 2.6rem;
-    margin-bottom: 10px;
 }
 
 .academic-entry {
@@ -137,8 +190,8 @@ footer {
 
 .academic-entry img {
     width: 100%;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    border-radius: 14px;
+    margin-bottom: 22px;
 }
 
 .caption h2 {
@@ -149,27 +202,18 @@ footer {
 
 .caption p {
     color: #cfcfcf;
-    line-height: 1.7;
+    line-height: 1.75;
     font-size: 1rem;
 }
 
 /* =========================
-   BACK TO HOME NAV
+   FOOTER
 ========================= */
-.back-nav {
-    text-align: left;
-    margin-bottom: 30px;
-}
-
-.back-nav a {
-    text-decoration: none;
-    color: #9a9a9a;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
-}
-
-.back-nav a:hover {
-    color: #ffffff;
+footer {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
 }
 
 /* =========================
@@ -182,5 +226,10 @@ footer {
 
     .page-header h1 {
         font-size: 2.1rem;
+    }
+
+    .page-nav {
+        flex-direction: column;
+        gap: 10px;
     }
 }
