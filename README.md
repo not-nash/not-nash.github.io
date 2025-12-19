@@ -1,23 +1,16 @@
-# Amin Sumpingan
+# Personal Website
 
-Personal website and digital space.
+This is my personal website hosted on GitHub Pages.
 
-This repository contains the source code for my personal website, where I write about my academic life, personal thoughts, and works.
+## Sections
+- Academic Life
+- Personal Blog
+- Life, Works & Writings
 
-## 🌐 Live Website
-👉 https://yourusername.github.io/reponame/
-
-## 📂 Sections
-- **Academic Life** — studies, interests, and academic journey
-- **Personal Blog** — reflections and ideas
-- **Life, Works & Writings** — creative and professional work
-
-## 🛠️ Tech Stack
+## Tech Used
 - HTML
 - CSS
 - JavaScript
-- GitHub Pages
 
-## 📬 Contact
-- Email: your@email.com
-- GitHub: https://github.com/yourusername
+## Theme
+Dark, minimal, and professional.
