@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
+/* PAGE */
 body {
     background-color: #0b0b0b;
     color: #ffffff;
@@ -14,48 +16,51 @@ body {
     align-items: center;
 }
 
+/* LAYOUT */
 .container {
     width: 90%;
     max-width: 900px;
     text-align: center;
 }
 
-/* Header */
+/* HEADER */
 header h1 {
     font-size: 2.8rem;
     font-weight: 600;
-    margin-bottom: 5px;
 }
 
 .subtitle {
     color: #9a9a9a;
-    margin-bottom: 50px;
+    margin: 10px 0 50px;
 }
 
-/* Grid Layout */
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
 }
 
-/* Square Cards */
+/* CARD */
 .card {
     position: relative;
     aspect-ratio: 1 / 1;
-    text-decoration: none;
-    color: white;
     border-radius: 12px;
     overflow: hidden;
+    text-decoration: none;
+    color: white;
+
     background-size: cover;
     background-position: center;
+
     display: flex;
     align-items: flex-end;
     padding: 20px;
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Dark overlay */
+/* DARK OVERLAY */
 .card::before {
     content: "";
     position: absolute;
@@ -63,20 +68,20 @@ header h1 {
     background: rgba(0, 0, 0, 0.55);
 }
 
-/* Text */
+/* TEXT */
 .card span {
     position: relative;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-/* Hover effect */
+/* HOVER */
 .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* Background images (replace later) */
+/* BACKGROUND IMAGES */
 .academic {
     background-image: url("images/academic.jpg");
 }
@@ -89,7 +94,7 @@ header h1 {
     background-image: url("images/works.jpg");
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     margin-top: 50px;
     font-size: 0.9rem;
