@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
 
 body {
-  background: #0f172a;
-  color: #e5e7eb;
-  line-height: 1.6;
+  background: #0a0a0a;
+  color: #e5e5e5;
+  line-height: 1.7;
 }
 
 /* Hero Section */
@@ -19,18 +19,21 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(135deg, #2563eb, #1e40af);
   padding: 1rem;
+  background: radial-gradient(circle at top, #111 0%, #000 60%);
 }
 
 .hero h1 {
   font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
   margin-bottom: 0.5rem;
 }
 
 .hero p {
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  opacity: 0.75;
+  margin-bottom: 2.5rem;
 }
 
 /* Buttons */
@@ -42,34 +45,45 @@ body {
 }
 
 .btn {
-  padding: 1rem 1.5rem;
-  background: #1e293b;
-  color: #e5e7eb;
-  border-radius: 8px;
+  padding: 0.9rem 1.6rem;
+  background: transparent;
+  color: #e5e5e5;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.2s, background 0.2s;
+  font-weight: 500;
+  transition: all 0.25s ease;
 }
 
 .btn:hover {
-  background: #334155;
-  transform: translateY(-4px);
+  background: #141414;
+  border-color: #3a3a3a;
+  transform: translateY(-2px);
 }
 
 /* Sections */
 section {
-  max-width: 800px;
-  margin: 4rem auto;
-  padding: 0 1rem;
+  max-width: 820px;
+  margin: 5rem auto;
+  padding: 0 1.2rem;
 }
 
 section h2 {
-  color: #60a5fa;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin-bottom: 1rem;
+  color: #cfcfcf;
 }
 
+section p {
+  color: #b5b5b5;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 2rem;
-  opacity: 0.7;
+  padding: 2.5rem;
+  font-size: 0.85rem;
+  color: #777;
+  border-top: 1px solid #1a1a1a;
 }
