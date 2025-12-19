@@ -7,34 +7,37 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+
+  <header class="hero">
     <h1>Your Name</h1>
-    <p>Student • Developer • Creator</p>
+    <p>Welcome to my personal space</p>
+
+    <div class="buttons">
+      <a href="#academic" class="btn">Academic Life</a>
+      <a href="#blog" class="btn">Personal Blog</a>
+      <a href="#life" class="btn">Life, Works & Writings</a>
+    </div>
   </header>
 
-  <section class="about">
-    <h2>About Me</h2>
+  <!-- Sections -->
+  <section id="academic">
+    <h2>Academic Life</h2>
     <p>
-      Hi! I'm Your Name. This is my personal website where I share who I am,
-      what I do, and what I’m learning.
+      My studies, research interests, achievements, and academic journey.
     </p>
   </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>🚀 Project One</li>
-      <li>💻 Project Two</li>
-      <li>📱 Project Three</li>
-    </ul>
+  <section id="blog">
+    <h2>Personal Blog</h2>
+    <p>
+      Thoughts, reflections, lessons, and experiences I want to share.
+    </p>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
+  <section id="life">
+    <h2>Life, Works & Writings</h2>
     <p>
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      Creative works, life experiences, and things I’m building or writing.
     </p>
   </section>
 
@@ -42,6 +45,6 @@
     <p>© 2025 Your Name</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
+
