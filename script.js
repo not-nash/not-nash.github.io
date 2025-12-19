@@ -1,1 +1,2 @@
-console.log("Welcome to my website!");
+// Placeholder for future interactivity
+console.log("Website loaded successfully");
