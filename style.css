@@ -154,6 +154,25 @@ footer {
 }
 
 /* =========================
+   BACK TO HOME NAV
+========================= */
+.back-nav {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.back-nav a {
+    text-decoration: none;
+    color: #9a9a9a;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.back-nav a:hover {
+    color: #ffffff;
+}
+
+/* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 600px) {
